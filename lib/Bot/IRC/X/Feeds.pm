@@ -132,7 +132,7 @@ sub init {
                         ' (' . makeashorterlink( $item->{link} ) . ')';
                     $msg .= ' -- ' . $item->{comments} if ( $item->{comments} );
 
-                    $bot->msg( $_, $msg ) for ( @{ $url->{forums} } || @$channels );
+                    $bot->msg( $_, $msg ) for ( ( @{ $url->{forums} } ) ? @{ $url->{forums} } : @$channels );
 
                     last if ( ++$printed >= $max_per );
                 }
