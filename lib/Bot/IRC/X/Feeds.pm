@@ -63,7 +63,11 @@ sub init {
             }
             elsif ( $m->{action} eq 'remove' ) {
                 my $url = lc( $m->{url} );
-                if ( grep { $_->{url} eq $url } @urls ) {
+                if ( $url eq 'all' ) {
+                    $bot->reply_to(q{OK. I'll stop reporting on all the feeds I've been tracking.});
+                    $bot->store->set( 'urls' => [] );
+                }
+                elsif ( grep { $_->{url} eq $url } @urls ) {
                     $bot->reply_to(q{OK. I'll stop reporting on the feed you provided.});
                     $bot->store->set( 'urls' => [ grep { $_->{url} ne $url } @urls ] );
                 }
@@ -192,6 +196,10 @@ You can list the feeds the bot is following:
 And you can remove feeds from being watched:
 
     bot feed remove URL
+
+You can also remove all feeds from being watched:
+
+    bot feed remove all
 
 =head2 Configuration Settings
 
