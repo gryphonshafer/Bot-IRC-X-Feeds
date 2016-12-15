@@ -4,7 +4,7 @@ Bot::IRC::X::Feeds - Bot::IRC plugin to watch and notify on changes in RSS feeds
 
 # VERSION
 
-version 1.01
+version 1.02
 
 [![Build Status](https://travis-ci.org/gryphonshafer/Bot-IRC-X-Feeds.svg)](https://travis-ci.org/gryphonshafer/Bot-IRC-X-Feeds)
 [![Coverage Status](https://coveralls.io/repos/gryphonshafer/Bot-IRC-X-Feeds/badge.png)](https://coveralls.io/r/gryphonshafer/Bot-IRC-X-Feeds)
@@ -44,6 +44,10 @@ You can list the feeds the bot is following:
 And you can remove feeds from being watched:
 
     bot feed remove URL
+
+You can also remove all feeds from being watched:
+
+    bot feed remove all
 
 ## Configuration Settings
 
