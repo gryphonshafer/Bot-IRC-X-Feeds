@@ -1,6 +1,7 @@
 Revision history for Bot::IRC::X::Feeds
 
 {{$NEXT}}
+        - Fix for RSS feeds that use dc:date instead of pubDate
 
 1.02      2016-12-15 09:27:23-08:00 America/Los_Angeles
         - Ability to remove all watched/tracked feeds at once

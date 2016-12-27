@@ -114,8 +114,10 @@ sub init {
 
                 my $printed = 0;
                 for my $item ( @{ $rss->{items} } ) {
-                    my $time = str2time( $item->{pubDate} );
-                    next if ( $time < $since );
+                    my $time = str2time(
+                        ( $item->{dc} and $item->{dc}{date} ) ? $item->{dc}{date} : $item->{pubDate}
+                    );
+                    next if ( not $time or $time < $since );
 
                     my $key = join( '|',
                         $url->{url},
