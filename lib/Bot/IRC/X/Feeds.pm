@@ -1,6 +1,7 @@
 package Bot::IRC::X::Feeds;
 # ABSTRACT: Bot::IRC plugin to watch and notify on changes in RSS feeds
 
+use 5.012;
 use strict;
 use warnings;
 
