@@ -1,6 +1,7 @@
 Revision history for Bot::IRC::X::Feeds
 
 {{$NEXT}}
+        - Remove using publication time checking for filtering
         - Adding Perl versions to test; annual general update for 2018
 
 1.03      2016-12-27 08:43:35-08:00 America/Los_Angeles
