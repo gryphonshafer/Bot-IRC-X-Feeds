@@ -18,9 +18,8 @@ version 1.04
         plugins => ['Feeds'],
         vars    => {
             x-feeds => {
-                interval        => 10,
-                max_per         => 5,
-                fresh_intervals => 2,
+                interval => 10,
+                max_per  => 5,
             }
         },
     )->run;
@@ -58,9 +57,8 @@ Setting the `x-feeds` values allows for configuration.
         plugins => ['Feeds'],
         vars    => {
             x-feeds => {
-                interval        => 10,
-                max_per         => 5,
-                fresh_intervals => 2,
+                interval => 10,
+                max_per  => 5,
             }
         },
     )->run;
@@ -69,11 +67,6 @@ The "interval" value is the time interval between calls to feeds, measured in
 minutes.
 
 The "max\_per" value is the number of items returned per feed per call.
-
-The "fresh\_intervals" setting means how many intervals of time backward should
-items be considered fresh enough to report on. For example, if you set an
-interval of 5 minutes and a fresh\_intervals of 3, then any item in a feed with
-a publication time older than 15 will not be reported.
 
 The default values for all are shown in the example above.
 
