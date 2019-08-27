@@ -156,7 +156,7 @@ __END__
         connect => { server => 'irc.perl.org' },
         plugins => ['Feeds'],
         vars    => {
-            x-feeds => {
+            'x-feeds' => {
                 interval => 10,
                 max_per  => 5,
             }
@@ -195,7 +195,7 @@ Setting the C<x-feeds> values allows for configuration.
         connect => { server => 'irc.perl.org' },
         plugins => ['Feeds'],
         vars    => {
-            x-feeds => {
+            'x-feeds' => {
                 interval => 10,
                 max_per  => 5,
             }

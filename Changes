@@ -1,6 +1,7 @@
 Revision history for Bot::IRC::X::Feeds
 
 {{$NEXT}}
+        - Update Travis YAML
 
 1.04      2019-05-06 17:05:04-07:00 America/Los_Angeles
         - Remove using publication time checking for filtering
