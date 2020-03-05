@@ -216,9 +216,7 @@ You can look for additional information at:
 =for :list
 * L<Bot::IRC>
 * L<GitHub|https://github.com/gryphonshafer/Bot-IRC-X-Feeds>
-* L<CPAN|http://search.cpan.org/dist/Bot-IRC-X-Feeds>
 * L<MetaCPAN|https://metacpan.org/pod/Bot::IRC::X::Feeds>
-* L<AnnoCPAN|http://annocpan.org/dist/Bot-IRC-X-Feeds>
 * L<Travis CI|https://travis-ci.org/gryphonshafer/Bot-IRC-X-Feeds>
 * L<Coveralls|https://coveralls.io/r/gryphonshafer/Bot-IRC-X-Feeds>
 * L<CPANTS|http://cpants.cpanauthors.org/dist/Bot-IRC-X-Feeds>
