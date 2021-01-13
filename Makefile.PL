@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
     "LWP::UserAgent" => 0,
     "WWW::Shorten" => 0,
     "XML::RSS" => 0,
-    "exact" => 0
+    "exact" => "1.14"
   },
   "TEST_REQUIRES" => {
     "Bot::IRC" => 0,
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.05",
+  "VERSION" => "1.06",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -55,7 +55,7 @@ my %FallbackPrereqs = (
   "Test::More" => 0,
   "WWW::Shorten" => 0,
   "XML::RSS" => 0,
-  "exact" => 0,
+  "exact" => "1.14",
   "strict" => 0,
   "warnings" => 0
 );
